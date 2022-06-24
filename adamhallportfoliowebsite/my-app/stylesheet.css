@@ -1,0 +1,654 @@
+
+/* Sets HTML */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sets so Horizontol Scroll Bar is not Avaliable */
+body {
+ overflow-x: hidden;
+}
+
+/*Work Pls :)! */
+@media screen and (min-width: 2000px) {
+  body {
+    overflow-x: visible;
+  }
+}
+
+/* Sets Position to the top of the screen */
+#topOfScreen {
+  opacity: 100%;
+  z-index: 0%;
+  color: #444;
+  font-size: 50px;
+  text-align: center;
+  top: 0.00001%;
+  opacity: 0%;
+  z-index: 0;
+}
+
+/* Name Adam Hall in Circle*/
+.adamHall {
+  position: absolute;
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  top: 430px;
+  left: 875px;
+  transform: translateX(-50%);
+  z-index: 9999999999999;
+  width: 10px;
+}
+
+/* Large Green Image */
+.imageSquare {
+  position: absolute;
+  width: 1920px;
+  height: 1155px;
+  top: 1px;
+  left: 0px;
+  opacity: 100%;
+  z-index: 9;
+}
+
+/* Grey Circle Which Holds Adam Hall Text */
+
+.circleName {
+  position: absolute;
+  background-color: rgb(41, 41, 41);
+  width: 275px;
+  height: 275px;
+  top: 350px;
+  left: 820px;
+  border-radius: 50%;
+  z-index: 9;
+}
+
+/* Creative Portfolio */
+.uniStudent {
+  position: absolute;
+  font-size: 25px;
+  font-weight: bolder;
+  color: rgb(33, 193, 199);
+  text-align: center;
+  top: 650px;
+  left: 1065px;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 200px;
+  z-index: 10;
+}
+
+/* White Verticle Line on the right */
+.containerMedia {
+  position: absolute;
+  color: #ffffff;
+  top: 0px;
+  left: 1800px;
+  border-left: solid;
+  border-width: 0.3px;
+  height: 1156px;
+  width: 100px;
+  z-index: 9999999999999;
+
+}
+
+/* Text Under Creative Portfolio Text which talks about me */
+.aboutMe {
+  position: relative;
+  font-size: 22px;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  top: 700px;
+  left: 1250px;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 500px;
+  z-index: 10;
+}
+
+/* Positions Instagram Image */
+.instagramIcon {
+  position: relative;
+  top: 706px;
+  right: -15px;
+  z-index: 10;
+} /* If you want dots under the hoverable text *
+
+
+
+/* Tooltip which shows sets up text */
+.twitterIcon {
+  position: relative;
+  top: 634px;
+  right: -15px;
+  z-index: 10;
+}
+
+/* Positions Discord Image */
+.discordIcon {
+  position: relative;
+  top: 485px; 
+  right: -15px; 
+  z-index: 10;
+}
+
+/* Positions Steam Image */
+.steamIcon {
+  position: relative;
+  top: 559px;
+  right: -15px;
+  z-index: 10;
+}
+
+/* Used for image classes to increase their size on hover */
+.imageGrow {
+  transition: all ease-in-out 600ms;
+}
+
+.imageGrow:hover {
+  transform: scale(1.3);
+  transition: all ease-in-out 600ms;
+  
+}
+
+/* Stops image from overscaling container */
+.imageObjectFit {
+  position: relative; /* Inside Container So Relative to the container */
+  top: -3px;
+}
+
+/* Position of my project */
+#aboveMyProjects {
+  position: absolute;
+  opacity: 100%;
+  color: #444;
+  font-size: 50px;
+  text-align: center;
+  top: 139.8%;
+  opacity: 0%;
+  z-index: 0;
+}
+
+/*Position of Contact */
+#contactMe {
+  position: absolute;
+  top: 500px;
+  left: 3200px;
+  z-index: 9999999;
+  width: 10px;
+  color: #ffffff;
+}
+
+/* Text Inside my Photography */
+.projectPhotographyText {
+  position: absolute;
+  font-size: 37px;
+  font-weight: bolder;
+  color: #444;
+  text-align: center;
+  top: 10%;
+  left: 25%;
+  padding: 5px;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.projectPhotographyText:hover {
+  color: #384a50;
+  z-index: 10;
+}
+
+/* Text Inside my Programming */
+.projectProgrammingText {
+  position: absolute;
+  font-size: 37px;
+  font-weight: bolder;
+  color: #444;
+  text-align: center;
+  top: 10%;
+  left: 25%;
+  padding: 5px;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.projectProgrammingText:hover {
+  color: #384a50;
+  z-index: 10;
+}
+
+/* Sets Paragraph */
+p {
+  position: absolute;
+  left: 50%;
+  font-size: 30px;
+  font-weight: lighter;
+  transform: translate(-50%);
+  z-index: 10;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  position: absolute;
+  left: 20%;
+  float: left;
+  width: 20%;
+  height: 50%;
+  text-align: left;
+  font-weight: bold;
+  color: rgb(238, 235, 221);
+  z-index: 9;
+  top: 280%; /* this is fucked fixed it */
+  max-width: 260%;
+  max-height: 50%;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+    z-index: 10;
+  }
+}
+
+/*NAV BAR */
+/* code from video */
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+
+/* Nav Bar Container */
+.navBarContainer {
+  top: 20px;
+  position: absolute;
+  width:  700px;
+  height: 66px;
+  left: 960px;
+  z-index: 99;
+  font-weight: bolder;
+  padding-right: 45px;
+  max-height: 70px; /*Stops Image From Overflowing Div*/
+  text-align: center;
+}
+
+/* Icons for Circles */
+.circleIcons {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  position: absolute;
+  width: 60px;
+  border-radius: 50px;
+  height: 60px;
+  border: #ffffff solid;
+}
+
+/*Circle for Contact Me Icon*/
+.circleContactMe {
+  position: absolute;
+  top: 870px;
+  left: 1300px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+  position: absolute;
+  width: 150px;
+  border-radius: 50px;
+  height: 60px;
+  border: #ffffff solid;
+  color:#ffffff;
+  z-index: 10000000000000;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+
+/*Moves the Arrow Image*/
+.arrowVertical {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 870px;
+  left: 1200px;
+  z-index: 99;
+}
+
+.arrowHorizontal {
+  position: relative;
+  left: 10px;
+  top: 2px;
+}
+
+header {
+  background: rgb(238, 235, 221);
+  z-index: 9999999;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+  z-index: 10;
+}
+
+.nameNavBar {
+  float: left;
+  left: 70px;
+  color: rgb(238, 235, 221);
+  font-size: 30px;
+  position: relative;
+  font-weight: bolder;
+  transition: 2s ease-in-out;
+  z-index: 10;
+  top: 17px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  z-index: 10;
+}
+
+nav {
+  z-index: 10;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 10;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 25px;
+
+  position: relative;
+  z-index: 10;
+}
+
+nav a {
+  color: rgb(238, 235, 221);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  z-index: 10;
+}
+
+nav a:hover {
+  color: rgb(139, 143, 139);
+  transition: 0.3s ease-in-out;
+  z-index: 10;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: rgb(33, 193, 199);
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+  z-index: 10;
+}
+
+nav a:hover::before {
+  width: 100%;
+  z-index: 10;
+}
+/*NAV BAR END */
+
+/*Post Card Container*/
+.postCardContainer {
+  position: relative;
+  top: 20px;
+  left: 100px;
+  width: 1600px;
+  height: 382px;
+  display: inline-block;
+}
+
+/*Post Card Image */
+.postCardImage {
+position: relative;
+width: 100%;
+height: 100%;
+top: 0px;
+left: 250px;
+max-width: 350px;
+max-height: 175px;
+min-width: 350px;
+max-height: 175px;
+border-radius: 3px;
+padding-bottom: 6px;
+}
+
+/*Post Card Title */
+.postCardTitle {
+  position: relative;
+  text-align: left;
+  top: 0px;
+  left: 250px;
+  font-weight: bolder;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  width: 350px;
+  height: 38px;
+}
+
+/*Post Card Text */
+.postCardText {
+  position: relative;
+  text-align: left;
+  top: 0px;
+  left: 250px;
+  font-weight: bolder;
+  font-size: medium;
+  color: rgb(214, 214, 214);
+  width: 350px;
+  height: 100px;
+}
+
+.pfpContainer {
+  position: relative;
+  width: 350px;
+  height: 50px;
+  left: 250px;
+  display: flex;
+}
+/*Post Card Text */
+.postCardPFPName {
+  position: relative;
+  text-align: left;
+  top: 5px;
+  left: 10px;
+  font-weight: bolder;
+  font-size: medium;
+  color: rgb(214, 214, 214);
+  font-weight: bold;
+  z-index: 9999999999999999;
+  width: 200px;
+  height: 35px;
+}
+
+.postCardPFPText {
+  position: relative;
+  text-align: left;
+  top: 0px;
+  left: 0px;
+  font-weight: bolder;
+  font-size: medium;
+  color: rgb(214, 214, 214);
+  font-weight: bold;
+  z-index: 9999999999999999;
+}
+
+/*Post Card PFP */
+.postCardPFP {
+  position: relative;
+  text-align: left;
+  top: 0px;
+  left: 0px;
+  font-weight: bolder;
+  font-size: medium;
+  color: rgb(214, 214, 214);
+  z-index: 9999999999999999;
+  border-radius: 110px;
+  border: #3f4bb8 2px solid;
+
+}
+
+/*Post Card Container*/
+.postCardLargeContainer {
+  position: relative;
+  top: 10px;
+  left: 100px;
+  width: 1600px;
+  height: 430px;
+  display: inline-block;
+}
+
+/*Post Card Image */
+.postCardLargeImage {
+position: relative;
+width: 100%;
+height: 100%;
+top: 0px;
+left: 270px;
+max-width: 803px;
+max-height: 401.5px;
+min-width: 803px;
+max-height: 401.5px;
+border-radius: 3px;
+padding-bottom: 6px;
+border-radius: 10px;
+}
+
+/*Post Card Title */
+.postCardLargeTitle {
+  position: relative;
+  text-align: left;
+  margin-top: 25px;
+  left: 280px;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  width: 350px;
+  height: 38px;
+
+}
+
+/*Post Card Text */
+.postCardLargeText {
+  position: relative;
+  text-align: left;
+  top: 0px;
+  left: 280px;
+  font-weight: bolder;
+  font-size: medium;
+  color: rgb(214, 214, 214);
+  width: 350px;
+  height: 70px;
+}
+
+.pfpLargeContainer {
+  position: relative;
+  width: 350px;
+  height: 100px;
+  left: 280px;
+}
+/*Post Card Text */
+.postCardLargePFPName {
+  position: relative;
+  text-align: left;
+  top: 5px;
+  left: 10px;
+  font-size: medium;
+  color: rgb(214, 214, 214);
+  font-weight: bold;
+  z-index: 9999999999999999;
+  width: 200px;
+  height: 35px;
+  font-size: 22px;
+}
+
+.postCardLargePFPText {
+  position: relative;
+  text-align: left;
+  top: 0px;
+  left: 0px;
+  font-weight: bolder;
+  font-size: medium;
+  color: rgb(214, 214, 214);
+  font-weight: bold;
+  z-index: 9999999999999999;
+  font-size: 22px;
+}
+
+/* Grey After Top Layer */
+.greyContainerBackground {
+  position: absolute;
+  background-color: #1b2124;
+  width: 1920px;
+  height: 844px;
+  top: 1156px;
+  left: 0px;
+}
+
+/* Aligns the postcard */
+.inLinePostCard {
+  list-style: none;
+  display: inline-flex;
+  margin: left;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+/* Lower Third */
+.lowerThird {
+  position: absolute;
+  background-color: rgb(15, 15, 15);
+  z-index: 999999999999999;
+  width: 1920px;
+  height: 125px;
+  top: 845px;
+}
+
+/* Adam Hall 2022 */
+
+.adamHall2022Container {
+  position: relative;
+  top: 80px;
+  left: 380px;
+  width: 250px;
+  height: 40px;
+  resize: both;
+  display: inline-flex;
+}
+
+.adamHall2022 {
+  font-weight: bolder;
+}
+
+
+.adamHallcc2022 {
+  font-weight: bolder;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+/* Container for read time */
+

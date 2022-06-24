@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/profile.png">
+    <link rel="stylesheet" href="stylesheetarticle.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='javascript.js'></script>
+    <title>Adam Hall</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<style> 
+    body {
+        margin: 0;
+        background: #1b2124;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 300;
+        width: 1920px;
+      }
+</style>
+<header>
+    <div class="navBarContainer">
+        <nav>
+          <ul>
+            <li><a href="http://127.0.0.1:5500/my-app/index.html">About</a></li>
+            <li><a href="#aboveMyProjects">Newsletter</a></li>
+            <li><a href="http://127.0.0.1:5500/my-app/contact.html">Contact</a></li>
+           <li><a href="/images/myw3schoolsimage.jpg" download>Download CV</a></li>
+          </ul>
+        </nav>
+      </div>
+</header>
+<body>
+
+<div class="articleHeader"></div>
+<div class="containerArticle">
+<div class="articleTitle">LUA WoW Addon</div>
+<div class="articlePFPContainer">
+<img class="articlePFP" src="images/profile.png">
+<div class="articlePFPName">Adam<br>5 Min Read</div>
+</div> <!--PFP Container-->
+<img class="articleImage" src="images/technology-programming-lua-wallpaper-preview.jpg"> 
+<div class="articleText"> 
+  <div class="articleMiniTitle">Overview</div>
+  <br>
+  In this article I am going to talk about a very simple addon I made for a game called 'World of Warcraft', the game itself is not particularly important in the topic besides the fact that it allows you to create modificaitons to how the game runs data through LUA API.
+
+<br><br>
+
+<img class="articleTextSectionImage" src="images/maxresdefault.png" width="300px" height="150px">
+
+<br><br>
+<div class="articleMiniTitle">Addon information</div>
+<br>
+The addon itself gets rid of 3 types of 'error notifcations', one being red error text which appears when an ability is pressed when the ability is not ready, the two others are error sounds which both occur the same way the red error text has. I decided to make the addon as after looking online for a simple solution I could not find one for the specific version of the game I was playing, so I decided to make a set of code for the specific version of the game I was playing!
+
+<br><br>
+
+<img class="articleTextSectionImage" src="images/luacodelua.PNG">
+
+<br><br>
+<b>--[[
+Removes Error Messages
+<br>
+Sets Error Speech to Mute (0)
+<br>
+Mutes Fizz Sounds Files
+<br>
+]]
+<br>
+UIErrorsFrame:UnregisterEvent("UI_ERROR_MESSAGE");
+<br>
+SetCVar("Sound_EnableErrorSpeech", "0");
+<br>
+MuteSoundFile(569772)
+<br>
+MuteSoundFile(569774)
+<br>
+MuteSoundFile(569775)
+<br>
+</b>
+<br><br>
+
+Now, the code is quite simple which can be seen on the screenshot and text above, lines 1 to 5 are comments which just state what the general use of the code does, the code is a set of 6 functions, however there are 3 which have different uses.
+<br><br>
+Line 6 of the code: <b>UIErrorsFrame:UnregisterEvent("UI_ERROR_MESSAGE");</b> unregisters the red error text which appears on the screen so that it no longer appears.
+<br><br>
+Line 7 of the code: <b>SetCVAR("Sound_EnableSpeech", "0")</b>; mutes error speech with the command '0' so the error sound is not played.
+<br><br>
+Line 8 to 11 of the code: <b>MuteSoundFile(569772)</b>, line 8 to <b>MuteSoundFile(569776),</b> line 11 mutes error sounds when certain abilities "sections" are pressed in the game.
+<br><br>
+There is not really much else I have to say about the code
+<br><br>
+<div class="articleMiniTitle">Information About Lua</div>
+<br>
+Some information about the World of Warcraft LUA API:
+<br>
+LUA is a lightweight, high level, multi-paradigm programming language designed primarily for embedded use in applications. Lua is cross-platform since the interpreter of compiled bytecode is written in ANSCI C, and Lua has a realitiveily simple C API to embed it into applications. Lua is one of the most popular programming languages for development of computer games due to its perceived easiness to embved, fast executions and short learning curve.
+<br><br>
+World of Warcraft introduced the use of their own API, which uses specific functions and facilities in the initial release of the game, however over time Blizzard introduced more, and more functions with upcoming and new development patches. To where at this point LUA can be used to make very complex set of code for a large amount of uses in the game.
+<br><br>
+Thanks for reading! <br>
+-Adam
+</div>
+</div> <!--Container Article-->
+
+<footer class ="lowerThird">
+  <div class="adamHall2022Container">
+    <div class="adamHall2022" style="color: #fff; font-size: 17px;">adam</div>
+    <div class="adamHall2022cc" style="color: #b8b5b5; font-size: 17px;">&nbsp; © 2022</div>
+  </div>
+</footer>
+</body>
+</html>
+
